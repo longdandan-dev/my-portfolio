@@ -1,13 +1,70 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>项目启动学习</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="zh-CN"> 
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon"  type="image/svg+xml" href="/favicon.svg"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>龙丹丹|前端开发</title>
+</head>
+<body>
+  <!-- 页头，顶部导航 -->
+    <header class="site-header">
+      <nav class="nav">
+        <a class="nav-logo" href="#top">龙丹丹</a>
+        <ul class="nav-list">
+          <li><a href="#about">关于</a></li>
+          <li><a href="#skills">技能</a></li>
+          <li><a href="#works">作品</a></li>
+          <li><a href="#contact">联系</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- 首屏 -->
+       <section id="top" class="hero">
+        <p class="hero-eyebrow">深圳 | 前端开发</p>
+        <h1>你好，我是龙丹丹</h1>
+        <p class="hero-desc">
+          软件工程毕业，从HTML / CSS / JavaScript 地基开始，目的成为一名能独立扛需求的前端开发人员。
+          用一个个真实的小项目练手，成长为资深开发者
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#works">看看我的作品</a>
+          <a class="btn btn-ghost" href="https://github.com/longdandan-dev" target="_blank" rel="noopener">GitHub</a>
+        </div>
+       </section>
+
+       <!-- 关于我 -->
+        <section id="about" class="section">
+          <h2>关于我</h2>
+          <!-- 内容 -->
+        </section>
+
+        <!-- 技能 -->
+        <section id="skills" class="section">
+          <h2>技能</h2>
+          <!-- 内容 -->
+        </section>
+
+        <!-- 作品 -->
+        <section id="works" class="section">
+          <h2>作品</h2>
+          <!-- 内容 -->
+        </section>
+
+        <!-- 联系 -->
+        <section id="contact" class="section">
+          <h2>联系我</h2>
+          <!-- 内容 -->
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+     <footer class="site-footer">
+      <p>©2026 龙丹丹 | 用HTML / CSS / JavaScript 手写</p>
+     </footer>
+
+     <script type="module" src="/src/main.js"></script>
+</body>
 </html>
