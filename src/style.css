@@ -1,10 +1,70 @@
+/* 设计变量，颜色字体尺寸 */
+:root{
+  /* 颜色 */
+   --color-bg:#ffffff;          /*页面底色*/
+  --color-surface:#f7f8fa;      /*浅灰（卡片底色)*/
+  --color-text:#1f2328;         /*正文主色*/
+  --color-text-soft:#5b6470;    /*次要文字*/
+  --color-border:#e6e8ec;       /*边框颜色*/
+  --color-primary:#2563eb;      /*主色*/
+  --color-primary-dark:#1d4ed8; /*主色加深，hover用*/
+  --color-primary-soft:rgba(37 ,99 ,235,0.1);/*主色浅底*/
+
+  /* 字体 */
+    --font-sans:system-ui,'Segoe UI','Microsoft YaHei',sans-serif;
+
+  /* 尺寸 */
+  --radius:12px;
+  --shadow-card:0 4px 16px rgba(0, 0, 0, 0.06);
+  --content-width:1000px;
+}
+/* 清零 */
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* 基础排版 */
 body{
-  font-family: system-ui, 'Segoe UI', 'Microsoft YaHei', sans-serif;
-  line-height: 1.6;
+  font-family: var(--font-sans);
+  line-height: 1.7;
+  font-size: 16px;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  padding: 0 24px;
+}
+
+h1,h2,h3{
+  line-height: 1.25;
+  color: var(--color-text);
+}
+
+h1{
+  font-size: 44px;
+}
+
+h2{
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+p{
+  color: var(--color-text-soft);
+}
+
+a{
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+/* 页面容器 */
+.site-header,main,.site-footer{
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
