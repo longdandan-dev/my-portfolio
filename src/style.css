@@ -8,13 +8,14 @@
   --color-border:#e6e8ec;       /*边框颜色*/
   --color-primary:#2563eb;      /*主色*/
   --color-primary-dark:#1d4ed8; /*主色加深，hover用*/
-  --color-primary-soft:rgba(37 ,99 ,235,0.1);/*主色浅底*/
+  --color-primary-soft:rgba(37, 99 , 235, 0.1);/*主色浅底*/
 
   /* 字体 */
     --font-sans:system-ui,'Segoe UI','Microsoft YaHei',sans-serif;
 
   /* 尺寸 */
   --radius:12px;
+  --radius-sm:8px;
   --shadow-card:0 4px 16px rgba(0, 0, 0, 0.06);
   --content-width:1000px;
 }
@@ -32,7 +33,6 @@ body{
   font-size: 16px;
   color: var(--color-text);
   background-color: var(--color-bg);
-  padding: 0 24px;
 }
 
 h1,h2,h3{
@@ -64,7 +64,58 @@ a:hover{
 }
 
 /* 页面容器 */
-.site-header,main,.site-footer{
+.nav,main,.site-footer{
   max-width: var(--content-width);
   margin: 0 auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.nav-logo{
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+.nav-logo:hover{
+  color: var(--color-primary);
+  text-decoration: none;
+}
+.nav-list{
+  display: flex;
+  list-style: none;
+  gap: 8px;
+}
+.nav-list a{
+  display: block;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-size:15px;
+  color: var(--color-text-soft);
+}
+.nav-list a:hover{
+  color:var(--color-primary);
+  background: var(--color-primary-soft);
+  text-decoration: none;
+}
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.site-header{
+  position: sticky;
+  top: 0; /*  这两行联合使用 */
+   z-index: 10; /*数字大的在上面，层级*/
+   background:rgba(255, 255, 255, 0.85);
+   backdrop-filter: blur(8px);
+   border-bottom: 1px solid var(--color-border);
+}
+
+/* 导航栏 */
+html{
+  scroll-behavior: smooth;/*点击锚点平滑转动*/
+  scroll-padding-top: 72px;/*跳转时留出导航栏高度，不会被覆盖*/
 }
