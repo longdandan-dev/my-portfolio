@@ -44,13 +44,128 @@
         <!-- 技能 -->
         <section id="skills" class="section">
           <h2>技能</h2>
+          <p class="section-desc">每一个技能都是在真实小项目里练过的，并不是看视频学会的。</p>
           <!-- 内容 -->
+           <div class="card-grid">
+
+            <article class="card">
+              <h3 class="card-title">HTML / CSS</h3>
+              <p class="card-desc">语义化骨架、盒模型、CSS 变量、Flex与Grid布局</p>
+              <ul class="tag-list">
+                <li class="tag">语义化标签</li>
+                <li class="tag">盒模型</li>
+                <li class="tag">CSS 变量</li>
+                <li class="tag">Flex</li>
+                <li class="tag">Grid</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">JavaScript</h3>
+              <p class="card-desc">变量与函数、数组与对象、DOM与事件、异步与接口请求</p>
+              <ul class="tag-list">
+                <li class="tag">数组方法</li>
+                <li class="tag">DOM与事件</li>
+                <li class="tag">localStorage</li>
+                <li class="tag">fetch</li>
+                <li class="tag">async / await</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">工程化</h3>
+              <p class="card-desc">用Node跑脚本、用npm装包、用Vite起项目、代码提交到GitHub</p>
+              <ul class="tag-list">
+                <li class="tag">Node</li>
+                <li class="tag">npm</li>
+                <li class="tag">Vite</li>
+                <li class="tag">Git / GitHub</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Vue3</h3>
+              <p class="card-desc">正在学，目标是用Vue3 + TypeScript把之前写过的项目重新写一遍</p>
+              <ul class="tag-list">
+                <li class="tag">模板语法</li>
+                <li class="tag">ref / reactive</li>
+                <li class="tag">组件通信</li>
+              </ul>
+            </article>
+           </div>
         </section>
 
         <!-- 作品 -->
         <section id="works" class="section">
           <h2>作品</h2>
+          <p class="section-desc">下面每一个项目都是我自己从零开始写的，代码和思路都能讲清</p>
           <!-- 内容 -->
+           <div class="card-grid card-grid--works">
+
+           <article class="card">
+              <h3 class="card-title">作品集官网</h3>
+              <p class="card-desc">你现在看的这个网站。Vite搭建工程，CSS变量管配色，Grid管排布卡片墙</p>
+              <ul class="tag-list">
+                <li class="tag">HTML</li>
+                <li class="tag">CSS</li>
+                <li class="tag">Vite</li>
+              </ul>
+              <!-- 按钮行，使用的是a标签 -->
+               <div class="card-action">
+                <a class="btn btn-ghost btn-sm" 
+                href="https://github.com/longdandan-dev/my-portfolio" 
+                target="_blank" rel="noopener">看源码</a>
+               </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">待办清单</h3>
+              <p class="card-desc">原生JS写的增删改查，勾选状态存在浏览器刷新不丢</p>
+              <ul class="tag-list">
+                <li class="tag">DOM</li>
+                <li class="tag">事件</li>
+                <li class="tag">localStorage</li>
+              </ul>
+              <!-- 按钮行，使用的是a标签 -->
+               <div class="card-action">
+                <a class="btn btn-ghost 
+                btn-sm" href="https://github.com/longdandan-dev/js-practice/blob/main/17-待办清单.html" 
+                target="_blank" rel="noopener">看源码</a>
+               </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">接口列表页</h3>
+              <p class="card-desc">fetch 拉接口数据，带loading 状态、错误提示和关键词搜索过滤。</p>
+              <ul class="tag-list">
+                <li class="tag">fetch</li>
+                <li class="tag">async</li>
+                <li class="tag">错误处理</li>
+              </ul>
+              <!-- 按钮行，使用的是a标签 -->
+               <div class="card-action">
+                <a class="btn btn-ghost 
+                btn-sm" href="https://github.com/longdandan-dev/js-practice/blob/main/20-接口列表页.html" 
+                target="_blank" rel="noopener">看源码</a>
+               </div>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">布局练习页</h3>
+              <p class="card-desc">导航栏 + 卡片墙 + 两栏内容区，专门练Flex 和Grid 的排布</p>
+              <ul class="tag-list">
+                <li class="tag">Flex</li>
+                <li class="tag">Grid</li>
+                <li class="tag">响应式</li>
+              </ul>
+              <!-- 按钮行，使用的是a标签 -->
+               <div class="card-action">
+               <a class="btn btn-ghost 
+                btn-sm" href="https://github.com/longdandan-dev/js-practice/blob/main/25-布局练习页.html" 
+                target="_blank" rel="noopener">看源码</a>
+               </div>
+            </article>
+            </div>
         </section>
 
         <!-- 联系 -->
@@ -58,7 +173,7 @@
           <h2>联系我</h2>
           <!-- 内容 -->
         </section>
-    </main>
+    </main>  
 
     <!-- 页脚 -->
      <footer class="site-footer">
