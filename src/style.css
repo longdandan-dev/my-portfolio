@@ -71,12 +71,13 @@ a:hover{
 .nav,main,.site-footer{
   max-width: var(--content-width);
   margin: 0 auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .nav-logo{
-  font-size: 20px;
+  flex-shrink: 0;
+  font-size: 18px;
   font-weight: 700;
   color: var(--color-text);
 }
@@ -87,11 +88,11 @@ a:hover{
 .nav-list{
   display: flex;
   list-style: none;
-  gap: 8px;
+  gap: 2px;
 }
 .nav-list a{
   display: block;
-  padding: 6px 14px;
+  padding: 6px 10px;
   border-radius: var(--radius-sm);
   font-size:15px;
   color: var(--color-text-soft);
@@ -105,8 +106,8 @@ a:hover{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .site-header{
@@ -126,8 +127,8 @@ html{
 
 /* 首屏 */
 .hero{
-  padding-top:96px;
-  padding-bottom: 96px;
+  padding-top:56px;
+  padding-bottom: 56px;
 }
 .hero-eyebrow{
   font-size: 14px;
@@ -137,7 +138,7 @@ html{
   margin-bottom: 12px;
 }
 .hero h1{
-  font-size: 56px;
+  font-size: 32px;
   margin-bottom: 20px;
 }
 .hero-desc{
@@ -182,8 +183,8 @@ html{
 
 /* 内容区块的统一留白 */
 .section{
-  padding-top:72px;
-  padding-bottom: 72px;
+  padding-top:48px;
+  padding-bottom: 48px;
 }
 
 /* M2卡片墙 */
@@ -195,11 +196,11 @@ html{
 
 .card-grid{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(200px,100%), 1fr));
   gap: 20px;
 }
 .card-grid--works{
-  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(320px,100%),1fr));
 
 }
 .card{
@@ -256,4 +257,66 @@ html{
   color: var(--color-text-soft);
   background: var(--color-surface);
   border-radius: 999px;
+}
+
+/* 响应式，移动优先
+规则：写在最外边的样式 = 手机的基本尺寸，想要更大的屏幕就用@media包起来
+*/
+
+@media (min-width:768px){       /*min-width:大于等于*/
+  .hero h1{
+    font-size: 56px;
+  }
+
+  .nav,main,.site-footer{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
+  .nav{
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .nav-logo{
+    font-size: 20px;
+  }
+  
+  .nav-list{
+    gap: 8px;
+  }
+
+  .nav-list a{
+    padding: 6px 14px;
+  }
+
+  .hero{
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .section{
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
+}
+/* 大屏电脑 */
+@media (min-width:1280px){
+  .hero h1{
+    font-size: 64px;
+  }
+
+  .hero{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .section{
+    padding-top: 88px;
+    padding-bottom: 88px;
+  }
+
+  .card-grid{
+    gap: 24px;
+  }
 }
