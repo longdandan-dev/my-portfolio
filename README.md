@@ -1,6 +1,6 @@
 # 龙丹丹 · 前端开发作品集
 
-一个用 HTML、CSS、JavaScript 手写的个人作品集官网，展示我目前完成的 4 个项目。
+一个用 HTML、CSS、JavaScript 手写的个人作品集官网，展示我目前完成的 5 个项目。
 
 在线地址：<https://longdandan-dev.github.io/my-portfolio/>
 
@@ -31,6 +31,13 @@
 作品数据统一放在 `src/main.js` 的 `works` 数组里，页面加载时通过 `map()` 生成卡片 HTML，再一次性渲染到作品区。
 
 想新增一部作品，只需要往数组里加一个对象，HTML 不需要手动复制。
+
+**加一个新项目时按这 4 步走：**
+
+1. `src/main.js` 的 `works` 数组加一条 —— 卡片、右上角序号、首屏的"几个项目"、关于我里的名单都会自己跟上（这几处由 JS 从数据算出来，不用回来改）
+2. 改 `index.html` 里的 `<meta name="description">` 和 `og:description` 的数量与名单 —— 这两处是给搜索引擎和分享卡片看的，抓取方不跑 JavaScript，只能手写
+3. `npm run build`
+4. `git add -A` → `commit` → `push`，等 GitHub Pages 自动换版
 
 ### 2. 响应式三档
 

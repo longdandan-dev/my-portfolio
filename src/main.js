@@ -76,6 +76,16 @@ grid.innerHTML = html ;
 //执行
 renderWorks();
 
+// 项目数量和名单都从 works 数据算出来 —— 以后加项目只改数组，这两处自己跟上
+document.querySelectorAll('[data-works-count]').forEach((el)=>{
+    el.textContent = String(works.length);
+});
+
+const worksNames = document.querySelector('[data-works-names]');
+if(worksNames){
+    worksNames.textContent = works.map((work)=>work.title).join('、');
+}
+
 // 当前态：滚到哪个区块，导航就点亮哪一项（用 aria-current 表达，读屏也听得懂）
 const navLinks = [...document.querySelectorAll('.nav-list a')];
 const sections = navLinks

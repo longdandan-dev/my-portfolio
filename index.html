@@ -5,11 +5,11 @@
   <link rel="icon"  type="image/svg+xml" href="/favicon.svg"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>龙丹丹 | 前端开发 · 深圳</title>
-  <meta name="description" content="龙丹丹，软件工程毕业，2026 年 9 月起脱产学习前端，已独立写完并上线作品集官网、待办清单、接口列表页、布局练习页 4 个项目。主攻 Vue 3 + TypeScript，目标深圳前端岗位。">
+  <meta name="description" content="龙丹丹，软件工程毕业，2026 年 9 月起脱产学习前端，已独立写完并上线作品集官网、待办清单、接口列表页、布局练习页、音乐播放器 5 个项目。主攻 Vue 3 + TypeScript，目标深圳前端岗位。">
   <meta name="theme-color" content="#2563eb">
   <meta property="og:type" content="website">
   <meta property="og:title" content="龙丹丹 · 前端开发作品集">
-  <meta property="og:description" content="自己写的四个项目，作品集官网、接口列表页、待办清单、布局练习页">
+  <meta property="og:description" content="自己写的五个项目：作品集官网、待办清单、接口列表页、布局练习页、音乐播放器">
   <meta property="og:url" content="https://longdandan-dev.github.io/my-portfolio/">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:image" content="https://longdandan-dev.github.io/my-portfolio/og-image.png">
@@ -47,8 +47,9 @@
           <a class="btn btn-ghost" href="https://github.com/longdandan-dev" target="_blank" rel="noopener">GitHub</a>
         </div>
         <!-- 首屏底部的三格数据：数字都按真实进度写，不吹 -->
+        <!-- 项目数量由 main.js 按 works 数组长度刷新，这里写的是静态默认值 -->
         <ul class="hero-stats">
-          <li><strong>4</strong><span>个已上线的项目</span></li>
+          <li><strong data-works-count>5</strong><span>个已上线的项目</span></li>
           <li><strong>2026.09</strong><span>开始脱产学习</span></li>
           <li><strong>Vue 3</strong><span>正在攻的方向</span></li>
         </ul>
@@ -58,7 +59,8 @@
         <section id="about" class="section">
           <h2>关于我</h2>
           <!-- 内容 -->
-           <p class="section-desc">软件工程毕业，从 2026 年 9 月开始脱产学习前端，已自己写完并上线 4 个项目：作品集官网、待办清单、接口列表页、布局练习页。现在主攻 Vue 3 + TypeScript，目标是在深圳找到一份能真正参与产品开发的 Vue 前端工作。 </p>
+           <!-- 数量与名单同样由 main.js 从 works 数据算出来，加项目不用回来改这句话 -->
+           <p class="section-desc">软件工程毕业，从 2026 年 9 月开始脱产学习前端，已自己写完并上线 <span data-works-count>5</span> 个项目：<span data-works-names>作品集官网、待办清单、接口列表页、布局练习页、音乐播放器</span>。现在主攻 Vue 3 + TypeScript，目标是在深圳找到一份能真正参与产品开发的 Vue 前端工作。 </p>
         </section>
 
         <!-- 技能 -->
