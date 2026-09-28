@@ -36,9 +36,22 @@ const works = [
 
 //M3：视图区
 function renderWorks(){
-const html = works.map((work)=>{
+const grid = document.querySelector('#works-grid');
+
+// 空状态：数据空了就说人话（说清为什么空 + 下一步去哪），不留一块白
+if(works.length === 0){
+    grid.innerHTML = `
+    <p class="empty-state">
+        作品还在整理中 —— 每完成一个项目就会补上来，想先看进度可以去
+        <a href="https://github.com/longdandan-dev" target="_blank" rel="noopener">GitHub</a>。
+    </p>`;
+    return;
+}
+
+const html = works.map((work, index)=>{
     return `
     <article class="card">
+        <span class="card-index">${String(index + 1).padStart(2, '0')}</span>
         <h3 class="card-title">${work.title}</h3>
         <p class="card-desc">${work.desc}</p>
         <ul class="tag-list">
@@ -50,8 +63,39 @@ const html = works.map((work)=>{
     </article>
     `;
 }).join('');
-document.querySelector('#works-grid').innerHTML  = html ;
+grid.innerHTML = html ;
 }
 
 //执行
 renderWorks();
+
+// 当前态：滚到哪个区块，导航就点亮哪一项（用 aria-current 表达，读屏也听得懂）
+const navLinks = [...document.querySelectorAll('.nav-list a')];
+const sections = navLinks
+    .map((link)=>document.querySelector(link.getAttribute('href')))
+    .filter(Boolean);
+
+if('IntersectionObserver' in window && sections.length){
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach((entry)=>{
+            if(!entry.isIntersecting) return;
+            navLinks.forEach((link)=>{
+                const isCurrent = link.getAttribute('href') === `#${entry.target.id}`;
+                if(isCurrent) link.setAttribute('aria-current', 'true');
+                else link.removeAttribute('aria-current');
+            });
+        });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+
+    sections.forEach((section)=>observer.observe(section));
+}
+
+// 页头：往下滚之后浮起来一点，和内容分层
+const header = document.querySelector('.site-header');
+
+function syncHeader(){
+    header.classList.toggle('is-scrolled', window.scrollY > 8);
+}
+
+syncHeader();
+window.addEventListener('scroll', syncHeader, { passive: true });
