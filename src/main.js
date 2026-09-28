@@ -30,6 +30,13 @@ const works = [
         link:'https://github.com/longdandan-dev/js-practice/blob/main/25-布局练习页.html',
         demo:'https://longdandan-dev.github.io/js-practice/25-布局练习页.html',
     },
+    {
+        title:'音乐播放器',
+        desc:'原生JS写的播放器：播放/暂停、上下曲、三种循环、拖进度条与音量，搜索收藏刷新不丢，坏音频自动跳过（音频为本机脚本合成，无版权问题）',       
+        tags:['audio','localStorage','响应式'],
+        link:'https://github.com/longdandan-dev/music-player',
+        demo:'https://longdandan-dev.github.io/music-player/',
+    },
     
 ];
 
