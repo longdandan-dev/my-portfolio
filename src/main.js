@@ -17,6 +17,13 @@ const works = [
         demo:'https://longdandan-dev.github.io/js-practice/17-待办清单.html',
     },
     {
+        title:'待办清单（vue版)',
+        desc:'Vue 3 + TypeScript 重写的待办清单：组件化拆分、computed 三栏筛选、localStorage 刷新不丢',      
+        tags:['Vue 3', 'TypeScript', '组件化'],
+        link:'https://github.com/longdandan-dev/todo-vue',                 
+        demo:'https://longdandan-dev.github.io/todo-vue/',
+    },
+    {
         title:'接口列表页',
         desc:'fetch 拉接口数据，带loading 状态、错误提示和关键词搜索过滤。',
         tags:['fetch','async / await','错误处理'],
@@ -37,6 +44,7 @@ const works = [
         link:'https://github.com/longdandan-dev/music-player',
         demo:'https://longdandan-dev.github.io/music-player/',
     },
+    
     
 ];
 
