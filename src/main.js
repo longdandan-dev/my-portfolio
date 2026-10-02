@@ -38,7 +38,7 @@ const works = [
         demo:'https://longdandan-dev.github.io/js-practice/25-布局练习页.html',
     },
     {
-        title:'音乐播放器',
+        title:'音乐播放器（原生 JS 版）',
         desc:'原生JS写的播放器：播放/暂停、上下曲、三种循环、拖进度条与音量，搜索收藏刷新不丢，坏音频自动跳过（音频为本机脚本合成，无版权问题）',       
         tags:['audio','localStorage','响应式'],
         link:'https://github.com/longdandan-dev/music-player',
@@ -46,6 +46,13 @@ const works = [
     },
     
     
+    {
+        title:'音乐播放器（Vue 版）',
+        desc:'用 Vue 3 + TypeScript 重写的播放器：Pinia 管状态、axios 加拦截器拉接口（加载/错误/空三态齐全），搜索与收藏刷新不丢，三档适配',
+        tags:['Vue 3','Pinia','TypeScript'],
+        link:'https://github.com/longdandan-dev/music-player-vue',
+        demo:'https://longdandan-dev.github.io/music-player-vue/',
+    },
 ];
 
 
