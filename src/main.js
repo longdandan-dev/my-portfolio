@@ -17,7 +17,7 @@ const works = [
         demo:'https://longdandan-dev.github.io/js-practice/17-待办清单.html',
     },
     {
-        title:'待办清单（vue版)',
+        title:'待办清单（Vue 版）',
         desc:'Vue 3 + TypeScript 重写的待办清单：组件化拆分、computed 三栏筛选、localStorage 刷新不丢',      
         tags:['Vue 3', 'TypeScript', '组件化'],
         link:'https://github.com/longdandan-dev/todo-vue',                 

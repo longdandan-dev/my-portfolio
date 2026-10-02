@@ -1,6 +1,6 @@
 # 龙丹丹 · 前端开发作品集
 
-一个用 HTML、CSS、JavaScript 手写的个人作品集官网，展示我目前完成的 5 个项目。
+一个用 HTML、CSS、JavaScript 手写的个人作品集官网，展示我目前完成的 6 个项目。
 
 在线地址：<https://longdandan-dev.github.io/my-portfolio/>
 
