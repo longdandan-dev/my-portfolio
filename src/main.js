@@ -44,8 +44,13 @@ const works = [
         link:'https://github.com/longdandan-dev/music-player',
         demo:'https://longdandan-dev.github.io/music-player/',
     },
-    
-    
+    {
+        title:'后台数据看板（vue + TypeScript）',
+        desc:'Vue 3 + TypeScript 写的后台管理系统：表格分页与搜索筛选、新增/编辑弹窗与表单校验、删除与批量删（乐观更新）、假登录与路由守卫、数据概览（统计卡 + 纯 CSS 柱状图）',
+        tags:['Vue Router','Element Plus','Pinia'],
+        link:'https://github.com/longdandan-dev/admin-dashboard',
+        demo:'https://longdandan-dev.github.io/admin-dashboard/',
+    },
     {
         title:'音乐播放器（Vue 版）',
         desc:'用 Vue 3 + TypeScript 重写的播放器：Pinia 管状态、axios 加拦截器拉接口（加载/错误/空三态齐全），搜索与收藏刷新不丢，三档适配',
