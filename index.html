@@ -9,7 +9,7 @@
   <meta name="theme-color" content="#2563eb">
   <meta property="og:type" content="website">
   <meta property="og:title" content="龙丹丹 · 前端开发作品集">
-  <meta property="og:description" content="自己写的七个项目：作品集官网、待办清单、待办清单（Vue 版）、接口列表页、布局练习页、音乐播放器（原生 JS 版）、音乐播放器（Vue 版）">
+  <meta property="og:description" content="自己写的八个项目：后台数据看板（Vue 3 + TypeScript）、音乐播放器（Vue 版）、待办清单（Vue 版）、音乐播放器（原生 JS 版）、作品集官网、待办清单、接口列表页、布局练习页">
   <meta property="og:url" content="https://longdandan-dev.github.io/my-portfolio/">
   <meta property="og:locale" content="zh_CN">
   <meta property="og:image" content="https://longdandan-dev.github.io/my-portfolio/og-image.png">
@@ -50,7 +50,7 @@
         <ul class="hero-stats">
           <li><strong data-works-count>8</strong><span>个已上线的项目</span></li>
           <li><strong>2026.09</strong><span>开始做前端项目</span></li>
-          <li><strong>Vue 3</strong><span>正在攻的方向</span></li>
+          <li><strong>Vue 3 + TS</strong><span>主力技术栈</span></li>
         </ul>
        </section>
 
@@ -59,7 +59,7 @@
           <h2>关于我</h2>
           <!-- 内容 -->
            
-           <p class="section-desc">软件工程毕业，从 2026 年 9 月开始集中做前端项目，已经自己写完并上线 <span data-works-count>8</span> 个：<span data-works-names>作品集官网、待办清单、待办清单（Vue 版）、接口列表页、布局练习页、音乐播放器（原生 JS 版）、音乐播放器（Vue 版）</span>。现在主攻 Vue 3 + TypeScript，目标是在深圳找到一份能真正参与产品开发的 Vue 前端工作。 </p>
+           <p class="section-desc">软件工程毕业，从 2026 年 9 月开始集中做前端项目，已经自己写完并上线 <span data-works-count>8</span> 个：<span data-works-names>后台数据看板（Vue 3 + TypeScript）、音乐播放器（Vue 版）、待办清单（Vue 版）、音乐播放器（原生 JS 版）、作品集官网、待办清单、接口列表页、布局练习页</span>。现在主攻 Vue 3 + TypeScript，目标是在深圳找到一份能真正参与产品开发的 Vue 前端工作。 </p>
         </section>
 
         <!-- 技能 -->
@@ -71,46 +71,58 @@
 
             <article class="card">
               <h3 class="card-title">HTML / CSS</h3>
-              <p class="card-desc">语义化骨架、盒模型、CSS 变量、Flex与Grid布局</p>
+              <p class="card-desc">语义化骨架、盒模型、CSS 变量（设计令牌）、Flex 与 Grid、响应式三档与窄屏适配、无障碍基础（跳转链接 / aria-current / 键盘焦点环）</p>
               <ul class="tag-list">
                 <li class="tag">语义化标签</li>
                 <li class="tag">盒模型</li>
                 <li class="tag">CSS 变量</li>
                 <li class="tag">Flex</li>
                 <li class="tag">Grid</li>
+                <li class="tag">响应式</li>
+                <li class="tag">无障碍</li>
               </ul>
             </article>
 
             <article class="card">
               <h3 class="card-title">JavaScript</h3>
-              <p class="card-desc">变量与函数、数组与对象、DOM与事件、异步与接口请求</p>
+              <p class="card-desc">变量与函数、数组方法、DOM 与事件（含事件委托、键盘事件）、异步与接口请求、localStorage 持久化、错误处理</p>
               <ul class="tag-list">
                 <li class="tag">数组方法</li>
-                <li class="tag">DOM与事件</li>
+                <li class="tag">DOM 与事件</li>
+                <li class="tag">事件委托</li>
+                <li class="tag">键盘事件</li>
                 <li class="tag">localStorage</li>
                 <li class="tag">fetch</li>
                 <li class="tag">async / await</li>
+                <li class="tag">错误处理</li>
               </ul>
             </article>
 
             <article class="card">
               <h3 class="card-title">工程化</h3>
-              <p class="card-desc">用Node跑脚本、用npm装包、用Vite起项目、代码提交到GitHub</p>
+              <p class="card-desc">Node 跑脚本、npm 装包、Vite 起项目与打包、按需引入控制产物体积、子路径部署（base + outDir）、Git 与 GitHub Pages 上线</p>
               <ul class="tag-list">
                 <li class="tag">Node</li>
                 <li class="tag">npm</li>
-                <li class="tag">Vite</li>
-                <li class="tag">Git / GitHub</li>
+                <li class="tag">Vite 构建</li>
+                <li class="tag">按需引入</li>
+                <li class="tag">Git</li>
+                <li class="tag">GitHub Pages</li>
               </ul>
             </article>
 
             <article class="card">
-              <h3 class="card-title">Vue3</h3>
-              <p class="card-desc">正在学，目标是用Vue3 + TypeScript把之前写过的项目重新写一遍</p>
+              <h3 class="card-title">Vue 3 + TypeScript</h3>
+              <p class="card-desc">用 Vue 3 + TypeScript 独立写完并上线三个项目（待办清单、音乐播放器、后台数据看板）：组合式 API、组件拆分与 props / emit、Vue Router（history 模式 + 路由守卫）、Pinia 管状态、Element Plus 按需引入、axios 响应拦截器与三态；TypeScript 侧写了类型注解、interface、联合类型、Omit 工具类型，并用 vue-tsc 把类型错误挡在打包之前</p>
               <ul class="tag-list">
-                <li class="tag">模板语法</li>
-                <li class="tag">ref / reactive</li>
-                <li class="tag">组件通信</li>
+                <li class="tag">组合式 API</li>
+                <li class="tag">ref / computed</li>
+                <li class="tag">props / emit</li>
+                <li class="tag">Vue Router</li>
+                <li class="tag">Pinia</li>
+                <li class="tag">Element Plus</li>
+                <li class="tag">axios</li>
+                <li class="tag">TypeScript</li>
               </ul>
             </article>
            </div>
@@ -140,7 +152,7 @@
           <li><a href="https://github.com/longdandan-dev" target="_blank" rel="noopener">GitHub</a></li>
           <li><a href="#top">回到顶部</a></li>
         </ul>
-        <p class="footer-note">© 2026 用 HTML / CSS / JavaScript 手写 · 最近更新 2026-10-7</p>
+        <p class="footer-note">© 2026 用 HTML / CSS / JavaScript 手写 · 最近更新 2026-10-07</p>
       </div>
      </footer>
 

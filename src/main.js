@@ -1,7 +1,37 @@
 import './style.css'
 
 // M3：作品数据
+// 排序口径（2026-10-07 定）：**技术复杂度从高到低** —— 三个 Vue 3 + TS 项目打头，
+// 然后是原生 JS 的完整项目，最后是两个纯练习页。卡片序号由数组顺序自动生成，改顺序不用改别处。
 const works = [
+    {
+        title:'后台数据看板（Vue 3 + TypeScript）',
+        desc:'Vue 3 + TypeScript 写的后台管理系统：表格分页与搜索筛选、新增/编辑弹窗与表单校验、删除与批量删（乐观更新）、假登录与路由守卫、数据概览（统计卡 + 纯 CSS 柱状图）',
+        tags:['Vue Router','Element Plus','Pinia'],
+        link:'https://github.com/longdandan-dev/admin-dashboard',
+        demo:'https://longdandan-dev.github.io/admin-dashboard/',
+    },
+    {
+        title:'音乐播放器（Vue 版）',
+        desc:'用 Vue 3 + TypeScript 重写的播放器：Pinia 管状态、axios 加拦截器拉接口（加载/错误/空三态齐全），搜索与收藏刷新不丢，三档适配',
+        tags:['Vue 3','Pinia','TypeScript'],
+        link:'https://github.com/longdandan-dev/music-player-vue',
+        demo:'https://longdandan-dev.github.io/music-player-vue/',
+    },
+    {
+        title:'待办清单（Vue 版）',
+        desc:'Vue 3 + TypeScript 重写的待办清单：组件化拆分、computed 三栏筛选、localStorage 刷新不丢',
+        tags:['Vue 3', 'TypeScript', '组件化'],
+        link:'https://github.com/longdandan-dev/todo-vue',
+        demo:'https://longdandan-dev.github.io/todo-vue/',
+    },
+    {
+        title:'音乐播放器（原生 JS 版）',
+        desc:'原生JS写的播放器：播放/暂停、上下曲、三种循环、拖进度条与音量，搜索收藏刷新不丢，坏音频自动跳过（音频为本机脚本合成，无版权问题）',
+        tags:['audio','localStorage','响应式'],
+        link:'https://github.com/longdandan-dev/music-player',
+        demo:'https://longdandan-dev.github.io/music-player/',
+    },
     {
         title:'作品集官网',
         desc:'你正在看的这个网站。Vite 搭建工程，CSS 变量管配色，Grid 管排布卡片墙',
@@ -17,46 +47,18 @@ const works = [
         demo:'https://longdandan-dev.github.io/js-practice/17-待办清单.html',
     },
     {
-        title:'待办清单（Vue 版）',
-        desc:'Vue 3 + TypeScript 重写的待办清单：组件化拆分、computed 三栏筛选、localStorage 刷新不丢',      
-        tags:['Vue 3', 'TypeScript', '组件化'],
-        link:'https://github.com/longdandan-dev/todo-vue',                 
-        demo:'https://longdandan-dev.github.io/todo-vue/',
-    },
-    {
         title:'接口列表页',
-        desc:'fetch 拉接口数据，带loading 状态、错误提示和关键词搜索过滤。',
+        desc:'fetch 拉接口数据，带 loading 状态、错误提示和关键词搜索过滤。',
         tags:['fetch','async / await','错误处理'],
         link:'https://github.com/longdandan-dev/js-practice/blob/main/20-接口列表页.html',
         demo:'https://longdandan-dev.github.io/js-practice/20-接口列表页.html',
     },
     {
         title:'布局练习页',
-        desc:'导航栏 + 卡片墙 + 两栏内容区，专门练Flex 和Grid 的排布',
+        desc:'导航栏 + 卡片墙 + 两栏内容区，专门练 Flex 和 Grid 的排布',
         tags:['Flex','Grid','响应式'],
         link:'https://github.com/longdandan-dev/js-practice/blob/main/25-布局练习页.html',
         demo:'https://longdandan-dev.github.io/js-practice/25-布局练习页.html',
-    },
-    {
-        title:'音乐播放器（原生 JS 版）',
-        desc:'原生JS写的播放器：播放/暂停、上下曲、三种循环、拖进度条与音量，搜索收藏刷新不丢，坏音频自动跳过（音频为本机脚本合成，无版权问题）',       
-        tags:['audio','localStorage','响应式'],
-        link:'https://github.com/longdandan-dev/music-player',
-        demo:'https://longdandan-dev.github.io/music-player/',
-    },
-    {
-        title:'后台数据看板（vue + TypeScript）',
-        desc:'Vue 3 + TypeScript 写的后台管理系统：表格分页与搜索筛选、新增/编辑弹窗与表单校验、删除与批量删（乐观更新）、假登录与路由守卫、数据概览（统计卡 + 纯 CSS 柱状图）',
-        tags:['Vue Router','Element Plus','Pinia'],
-        link:'https://github.com/longdandan-dev/admin-dashboard',
-        demo:'https://longdandan-dev.github.io/admin-dashboard/',
-    },
-    {
-        title:'音乐播放器（Vue 版）',
-        desc:'用 Vue 3 + TypeScript 重写的播放器：Pinia 管状态、axios 加拦截器拉接口（加载/错误/空三态齐全），搜索与收藏刷新不丢，三档适配',
-        tags:['Vue 3','Pinia','TypeScript'],
-        link:'https://github.com/longdandan-dev/music-player-vue',
-        demo:'https://longdandan-dev.github.io/music-player-vue/',
     },
 ];
 
