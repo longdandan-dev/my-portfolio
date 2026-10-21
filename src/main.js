@@ -14,7 +14,7 @@ const works = [
     {
         kind:'featured',
         title:'音乐播放器（Vue 版）',
-        desc:'用 Vue 3 + TypeScript 重写的播放器：Pinia 管状态、axios 加拦截器拉接口（加载/错误/空三态齐全），搜索与收藏刷新不丢，三档适配',
+        desc:'用 Vue 3 + TypeScript 重写的播放器：Pinia 管状态、axios 加拦截器拉接口（加载/错误/空三态齐全）；内置 6 首原创合成音乐和 1 个错误样本，异常音频自动跳过，搜索与收藏刷新不丢',
         tags:['Vue 3','Pinia','TypeScript'],
         link:'https://github.com/longdandan-dev/music-player-vue',
         demo:'https://longdandan-dev.github.io/music-player-vue/',
